@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  color: #8C59F1;
+  background-image: url('https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64f5e02cb5805eb6fd8e503c_Rectangle%20(98).svg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #8C59F1 0%, #6B3F9D 100%);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  border-bottom: 3px solid #6B3F9D;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #DA70D6;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 300ms, color 300ms;
+}
+
+.center-content {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-content h1 {
+  font-size: 4.5rem;
+  margin: 0;
+  line-height: 1.2;
+  color: #8C59F1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  color: #DA70D6;
+  backdrop-filter: blur(10px);
+}
+
+.footer a,
+.footer a:visited {
+  color: #DA70D6;
+  font-size: 16px;
+  text-decoration: none;
+  text-underline-offset: 2.5px;
+  transition: color 200ms, text-decoration 200ms;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #DA70D6;
+}
+
+.version-info {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  color: #8C59F1;
+  z-index: 1;
+}
+
+.version-info .version-number {
+  font-size: 35px;
+  margin: 0;
+}
+
+.version-info .version-text {
+  font-size: 25px;
+  margin: 0;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 30px #685dff);
+}
